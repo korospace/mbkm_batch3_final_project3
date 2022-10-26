@@ -20,8 +20,8 @@ class ProductController {
                     id: result.id,
                     title,
                     price: result.price,
-                    stock,
-                    CategoryId,
+                    stock: result.stock,
+                    CategoryId: result.CategoryId,
                     createdAt: result.createdAt,
                     updatedAt: result.updatedAt,
                 }
@@ -107,8 +107,8 @@ class ProductController {
                 product: {
                     id: result[1][0]['id'],
                     price: "Rp "+result[1][0]['price'],
-                    stock,
-                    title,
+                    stock: result[1][0]['stock'],
+                    title: result[1][0]['title'],
                     CategoryId: result[1][0]['CategoryId'],
                     createdAt: result[1][0]['createdAt'],
                     updatedAt: result[1][0]['updatedAt'],
