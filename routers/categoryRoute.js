@@ -4,10 +4,11 @@ const authentication = require("../middlewares/authentication");
 const router = require("express").Router();
 
 router.use(authentication);
+router.get("/categories", CategoryController.getAll);
+
 router.use("/categories", authorization);
 
 router.post("/categories", CategoryController.create);
-router.get("/categories", CategoryController.getAll);
 router.patch("/categories/:id", CategoryController.update);
 router.delete("/categories/:id", CategoryController.delete);
 
