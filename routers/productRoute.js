@@ -3,9 +3,9 @@ const authorization = require("../middlewares/adminAuthorization");
 const authentication = require("../middlewares/authentication");
 const router = require("express").Router();
 
-router.get("/products", ProductController.getAll);
-
 router.use(authentication);
+
+router.get("/products", ProductController.getAll);
 
 router.use("/products", authorization);
 

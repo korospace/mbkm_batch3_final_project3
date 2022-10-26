@@ -28,7 +28,7 @@ class TransactionController {
                 message:"you have successfully purchase the product",
                 transactionBill: {
                     total_price: result.total_price,
-                    quantity,
+                    quantity: result.quantity,
                     product_name: productName
                 }
             }
