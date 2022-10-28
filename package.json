@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "build": "npx sequelize-cli db:migrate"
+    "build": "npx sequelize-cli db:migrate && npx sequelize-cli db:seed --seed 20221024165442-seeding_admin_datas.js",
+    "db:create": "NODE_ENV=development npx sequelize-cli db:create",
+    "db:migrate": "NODE_ENV=development npx sequelize-cli db:migrate",
+    "db:seed": "NODE_ENV=development npx sequelize-cli db:seed --seed 20221024165442-seeding_admin_datas.js"
   },
   "keywords": [],
   "author": "",
