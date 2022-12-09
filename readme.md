@@ -1,7 +1,7 @@
 <h1 align="center">FINAL PROJECT 3</h1>
 <p align="center">
     <h2 align="center">
-        <a href="https://koro-project3.up.railway.app/"><strong>https://koro-project3.up.railway.app/</strong></a>
+        <a href="https://mbkmproject3koro-production.up.railway.app/"><strong>https://mbkmproject3koro-production.up.railway.app/</strong></a>
     </h2>
 </p>
 <br>
@@ -18,6 +18,9 @@
     npm run start
     ```
 3. The project will start at http://localhost:4000
+4. admin account <br>
+   email: admin1@gmail.com <br>
+   password: admin1 <br>
 
 ## API Docs
 comming soon
